@@ -9,7 +9,8 @@ int main()
 	rect.setFillColor(sf::Color(84, 221, 162, 255));
 
 	Board board;
-
+	window.setFramerateLimit(60);
+	
 	while (window.isOpen())
 	{
 		sf::Event event;

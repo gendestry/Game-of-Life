@@ -5,7 +5,7 @@ Board::Board() {
 	srand(time(nullptr));
 
 	for (int i = 0; i < NUM_COLS * NUM_ROWS; i++) {	
-		if (rand() % 10 > 8) {
+		if (rand() % 10 > 7) { // bigger number -> less live cells [0,9]
 			board.push_back(true);
 			newBoard.push_back(true);
 		}
